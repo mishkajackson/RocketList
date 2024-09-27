@@ -1,0 +1,28 @@
+name: Update Gist with Blacklist
+
+on:
+  push:
+    paths:
+      - Blacklist.conf
+
+jobs:
+  update-gist:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Update Gist with new blacklist.conf
+      run: |
+        curl -X POST "https://api.github.com/gists/eb64b490552a0df8d3e7b8b533274a0d" \
+        -H "Authorization: token ${{ secrets.GIST_TOKEN }}" \
+        -d @- << EOF
+        {
+          "files": {
+            "Blacklist.conf": {
+              "content": "$(cat blacklist.conf)"
+            }
+          }
+        }
+        EOF
