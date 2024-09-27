@@ -21,7 +21,7 @@ jobs:
         {
           "files": {
             "Blacklist.conf": {
-              "content": "$(cat blacklist.conf)"
+              "content": "$(cat Blacklist.conf)"
             }
           }
         }
