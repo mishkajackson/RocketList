@@ -3,7 +3,7 @@ name: Update Gist with Blacklist
 on:
   push:
     paths:
-      - blacklist.conf
+      - Blacklist.conf
 
 jobs:
   update-gist:
@@ -18,7 +18,7 @@ jobs:
 
     - name: Update Gist with new blacklist.conf
       run: |
-        CONTENT=$(cat blacklist.conf)
+        CONTENT=$(cat Blacklist.conf)
         curl -X PATCH "https://api.github.com/gists/eb64b490552a0df8d3e7b8b533274a0d" \
         -H "Authorization: token ${{ secrets.GIST_TOKEN }}" \
         -d "$(jq -n --arg content "$CONTENT" '{files: {"Blacklist.conf": {content: $content}}}')"
