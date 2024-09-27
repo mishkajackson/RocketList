@@ -15,7 +15,7 @@ jobs:
 
     - name: Update Gist with new blacklist.conf
       run: |
-        curl -X POST "https://api.github.com/gists/eb64b490552a0df8d3e7b8b533274a0d" \
+        curl -X POST "https://api.github.com/gists/7a0cda49a43f975059d20c86a383dbec" \
         -H "Authorization: token ${{ secrets.GIST_TOKEN }}" \
         -d @- << EOF
         {
