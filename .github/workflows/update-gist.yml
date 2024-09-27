@@ -3,7 +3,7 @@ name: Update Gist with Blacklist
 on:
   push:
     paths:
-      - Blacklist.conf
+      - blacklist.conf
 
 jobs:
   update-gist:
@@ -13,17 +13,12 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
+    - name: Install jq
+      run: sudo apt-get install jq
+
     - name: Update Gist with new blacklist.conf
       run: |
-        CONTENT=$(cat Blacklist.conf)
+        CONTENT=$(cat blacklist.conf)
         curl -X PATCH "https://api.github.com/gists/eb64b490552a0df8d3e7b8b533274a0d" \
         -H "Authorization: token ${{ secrets.GIST_TOKEN }}" \
-        -d @- << EOF
-        {
-          "files": {
-            "Blacklist.conf": {
-              "content": "$CONTENT"
-            }
-          }
-        }
-        EOF
+        -d "$(jq -n --arg content "$CONTENT" '{files: {"Blacklist.conf": {content: $content}}}')"
