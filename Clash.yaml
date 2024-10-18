@@ -39,13 +39,16 @@ payload:
   - DOMAIN-SUFFIX,kpapp.link
 
 #torrent
-  - DOMAIN-SUFFIX,rutracker.org
-  - DOMAIN-SUFFIX,rutracker.net
-  - DOMAIN-SUFFIX,rutracker.cc
+  - DOMAIN-KEYWORD,rutracker
   - DOMAIN-KEYWORD,rutor
+  - DOMAIN-SUFFIX,thepiratebay.org
+
 
 #other
   - DOMAIN-SUFFIX,flibusta.su
+  - DOMAIN-KEYWORD,adguard
+  - DOMAIN-SUFFIX,amnezia.org
+  - DOMAIN-SUFFIX,whoer.net
   - DOMAIN-SUFFIX,facebook.com
   - DOMAIN-SUFFIX,meduza.io
   - DOMAIN-SUFFIX,mos-gorsud.net
