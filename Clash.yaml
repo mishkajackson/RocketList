@@ -4,12 +4,19 @@ payload:
   - DOMAIN-SUFFIX,ytimg.com
   - DOMAIN-SUFFIX,googlevideo.com
   - DOMAIN-SUFFIX,youtube.com
-
-#chatGPT
   - DOMAIN-SUFFIX,ggpht.com
+  - DOMAIN-SUFFIX,youtubei.googleapis.com
+  - DOMAIN-SUFFIX,youtu.be
+  - DOMAIN-SUFFIX,nhacmp3youtube.com
+  - DOMAIN-SUFFIX,googleusercontent.com
+  - DOMAIN-SUFFIX,nhacmp3youtube.com
+  - DOMAIN-SUFFIX,youtube-nocookie.com
+
+#AI
   - DOMAIN-SUFFIX,openai.com
   - DOMAIN-SUFFIX,chatgpt.com
   - DOMAIN-KEYWORD,openai
+  - DOMAIN-SUFFIX,copilot.microsoft.com
 
 #instagram
   - DOMAIN-SUFFIX,instagram.com
@@ -42,7 +49,6 @@ payload:
   - DOMAIN-KEYWORD,rutracker
   - DOMAIN-KEYWORD,rutor
   - DOMAIN-SUFFIX,thepiratebay.org
-
 
 #other
   - DOMAIN-SUFFIX,flibusta.su
