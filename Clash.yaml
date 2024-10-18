@@ -1,2 +1,59 @@
 payload:
+#youtube
+  - DOMAIN-SUFFIX,i.ytimg.com
+  - DOMAIN-SUFFIX,ytimg.com
+  - DOMAIN-SUFFIX,googlevideo.com
+  - DOMAIN-SUFFIX,youtube.com
+
+#chatGPT
+  - DOMAIN-SUFFIX,ggpht.com
+  - DOMAIN-SUFFIX,openai.com
+  - DOMAIN-SUFFIX,chatgpt.com
+  - DOMAIN-KEYWORD,openai
+
+#instagram
+  - DOMAIN-SUFFIX,instagram.com
+  - DOMAIN-SUFFIX,cdninstagram.com
+  - DOMAIN-SUFFIX,static.cdninstagram.com
+  - DOMAIN-KEYWORD,instagram
+
+#discord
+  - RULE-SET,discord
+
+#love
+  - DOMAIN-SUFFIX,xhamster.com
+  - DOMAIN-SUFFIX,xvideos.com
+  - DOMAIN-SUFFIX,spankbang.com
+  - DOMAIN-SUFFIX,pornolab.net
+  - DOMAIN-SUFFIX,pornhub.com
+  - DOMAIN-SUFFIX,tubesafari.com
+  - DOMAIN-SUFFIX,xnxx.com
+
+#twitter
+  - DOMAIN-SUFFIX,x.com
+  - DOMAIN-SUFFIX,twitter.com
+
+#kinopub
   - DOMAIN-SUFFIX,kino.pub
+  - DOMAIN-SUFFIX,5c28.dpr.ovh
+  - DOMAIN-SUFFIX,kpapp.link
+
+#torrent
+  - DOMAIN-SUFFIX,rutracker.org
+  - DOMAIN-SUFFIX,rutracker.net
+  - DOMAIN-SUFFIX,rutracker.cc
+  - DOMAIN-KEYWORD,rutor
+
+#other
+  - DOMAIN-SUFFIX,flibusta.su
+  - DOMAIN-SUFFIX,facebook.com
+  - DOMAIN-SUFFIX,meduza.io
+  - DOMAIN-SUFFIX,mos-gorsud.net
+  - DOMAIN-SUFFIX,4pda.to
+  - DOMAIN-SUFFIX,ua
+  - DOMAIN-SUFFIX,habr.com
+  - DOMAIN-SUFFIX,medium.com
+  - DOMAIN-SUFFIX,rublacklist.net
+  - DOMAIN-SUFFIX,ntc.party
+  - DOMAIN-SUFFIX,miracleptr.wordpress.com
+  - DOMAIN-SUFFIX,speedtest.net
