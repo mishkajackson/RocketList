@@ -51,11 +51,17 @@ payload:
   - DOMAIN-KEYWORD,rutor
   - DOMAIN-SUFFIX,thepiratebay.org
 
+#check
+  - DOMAIN-SUFFIX,whoer.net
+  - DOMAIN-SUFFIX,myip.com
+  - DOMAIN-SUFFIX,check-host.net
+  - DOMAIN-SUFFIX,ipleak.net
+  - DOMAIN-SUFFIX,browserleaks.com
+
 #other
   - DOMAIN-SUFFIX,flibusta.su
   - DOMAIN-KEYWORD,adguard
   - DOMAIN-SUFFIX,amnezia.org
-  - DOMAIN-SUFFIX,whoer.net
   - DOMAIN-SUFFIX,facebook.com
   - DOMAIN-SUFFIX,meduza.io
   - DOMAIN-SUFFIX,mos-gorsud.net
