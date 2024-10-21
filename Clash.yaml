@@ -21,8 +21,6 @@ payload:
   - DOMAIN-SUFFIX,cdninstagram.com
   - DOMAIN-SUFFIX,static.cdninstagram.com
   - DOMAIN-KEYWORD,instagram
-  #discord
-  - DOMAIN-KEYWORD,discord
   #love
   - DOMAIN-SUFFIX,xhamster.com
   - DOMAIN-SUFFIX,xvideos.com
