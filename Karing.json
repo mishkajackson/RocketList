@@ -1,0 +1,19 @@
+{
+  "rules": [
+    {
+      "outbound": "currentSelected",
+      "name": "he",
+      "switch": true,
+      "or": true,
+      "domain_suffix": [
+        "2ip.io"
+      ],
+      "domain": [
+        "yahoo.com"
+      ],
+      "domain_keyword": [
+        "openai"
+      ]
+    }
+  ]
+}
