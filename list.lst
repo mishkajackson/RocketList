@@ -58,6 +58,7 @@ DOMAIN-SUFFIX,ipleak.net
 DOMAIN-SUFFIX,browserleaks.com
 
 #other
+DOMAIN-SUFFIX,2ip.io
 DOMAIN-SUFFIX,flibusta.su
 DOMAIN-KEYWORD,adguard
 DOMAIN-SUFFIX,zerolab.net
