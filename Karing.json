@@ -1,15 +1,11 @@
 {
   "rules": [
     {
-      "outbound": "currentSelected",
-      "name": "he",
-      "switch": true,
-      "or": true,
       "domain_suffix": [
-        "2ip.io"
+        "whoer.net"
       ],
       "domain": [
-        "yahoo.com"
+        "whoer.net"
       ],
       "domain_keyword": [
         "openai"
