@@ -1,4 +1,5 @@
 payload:
+  - DOMAIN-KEYWORD,discord
   - IP-CIDR,162.159.128.0/24
   - IP-CIDR,162.159.129.0/24
   - IP-CIDR,162.159.130.0/24
