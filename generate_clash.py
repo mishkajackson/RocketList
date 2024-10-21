@@ -13,19 +13,23 @@ def parse_list_file(filename):
             current_category = line  # Заголовок категории
             rules[current_category] = []
         elif line and current_category:
-            rules[current_category].append(f"  - {line}")
+            rules[current_category].append(f"- {line}")
 
     return rules
 
 def generate_clash_yaml(rules, output_file='Clash.yaml'):
     payload = []
     for category, domains in rules.items():
-        payload.append(category)
-        payload.extend(domains)
+        payload.append(category)  # Добавляем заголовок категории
+        payload.extend(domains)   # Добавляем домены
 
-    content = {'payload': payload}
+    # Записываем YAML без лишних кавычек
+    content = {'payload': yaml.safe_dump(payload, default_style=None, allow_unicode=True).splitlines()}
+
     with open(output_file, 'w') as f:
-        yaml.dump(content, f, default_flow_style=False, allow_unicode=True)
+        f.write("payload:\n")
+        for line in content['payload']:
+            f.write(f"  {line}\n")
 
 if __name__ == "__main__":
     rules = parse_list_file('list.lst')
