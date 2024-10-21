@@ -37,8 +37,9 @@ update-url = https://raw.githubusercontent.com/mishkajackson/Domain_List/refs/he
     with open(output_file, 'w') as f:
         f.write(general_section)
         for category, domains in rules.items():
-            f.write(f"{category}\n")
+            f.write(f"\n{category}\n")
             for domain in domains:
+                # Убираем лишние пробелы и добавляем переносы строк
                 f.write(f"DOMAIN-SUFFIX,{domain},PROXY\n")
 
 if __name__ == "__main__":
