@@ -1,4 +1,4 @@
-name: Update Clash.yaml
+name: Update Clash and Shadowrocket Configs
 
 on:
   push:
@@ -18,16 +18,16 @@ jobs:
       with:
         python-version: '3.x'
 
-    - name: Install PyYAML
+    - name: Install dependencies
       run: pip install pyyaml
 
-    - name: Convert list.lst to Clash.yaml
+    - name: Convert list.lst to Clash.yaml and Shadowrocket.conf
       run: python generate_clash.py
 
     - name: Commit and push changes
       run: |
         git config --global user.name "github-actions[bot]"
         git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-        git add Clash.yaml
-        git commit -m "Update Clash.yaml from list.lst"
+        git add Clash.yaml Shadowrocket.conf
+        git commit -m "Update Clash.yaml and Shadowrocket.conf from list.lst"
         git push
